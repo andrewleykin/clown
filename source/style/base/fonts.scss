@@ -1,0 +1,36 @@
+// Подключение шрифтов
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansItalic";
+	src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Intro";
+	src: url("../fonts/Intro.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "IntroScript";
+	src: url("../fonts/IntroScript.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}

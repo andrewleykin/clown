@@ -1,0 +1,76 @@
+.btn {
+	position: relative;
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	line-height: 34px;
+	border: 3px solid $accentColor;
+	border-radius: 20px;
+	color: $accentColor;
+	font-family: $boldFont;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all .2s linear;
+	z-index: 1;
+	&:before, &:after {
+		content: "";
+		display: block;
+		width: 200px;
+		height: 200px;
+		background: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all .3s linear;
+		z-index: -1;
+	}
+	&:before {
+		transform: translate(-150px, -190px) rotate(45deg);
+	}
+	&:after {
+		transform: translate(150px, 0px) rotate(45deg);
+	}
+	&:hover {
+		color: $accentColor;
+		line-height: 40px;
+		&:before {
+			transform: translate(0px, -10px) rotate(45deg);
+		}
+		&:after {
+			transform: translate(-10px, -50px) rotate(45deg);
+		}
+	}
+}
+
+.btn--white {
+	color: white;
+	border-color: white;
+	&:hover {
+		border: none;
+	}
+}
+
+.btn--fill {
+	width: 240px;
+	height: 60px;
+	background: white;
+	border: none;
+	font-size: 28px;
+	border-radius: 30px;
+	&:after,&:before {
+		background: rgba(255,255,255,0.1);
+	}
+	&:hover {
+		color: white;
+		border: 5px solid white;
+		background: transparent;
+		&:before {
+			transform: translate(0px, -75px) rotate(45deg);
+		}
+		&:after {
+			transform: translate(25px, -75px) rotate(45deg);
+		}
+	}
+}

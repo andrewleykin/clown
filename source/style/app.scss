@@ -1,5 +1,47 @@
-body {
-  margin: 0;
-}
+// Основной файл стилей
 
-@import 'common/greating';
+/* Основные стили */
+
+// Шрифты
+@import 'base/fonts';
+
+// Переменные
+@import 'base/var';
+
+// Миксины
+@import 'base/mixin';
+
+// Основные 
+@import 'base/base';
+
+
+// Секции
+
+/* Стили секции header */
+@import 'section/header';
+/* Конец секции header */
+
+/* Стили секции about */
+@import 'section/about';
+/* Конец секции about */
+
+
+
+
+// Блоки
+
+/* Стили блока menu */
+@import 'common/menu';
+/* Конец блока menu */
+
+/* Стили блока btn */
+@import 'common/btn';
+/* Конец блока btn */
+
+/* Стили блока timer */
+@import 'common/timer';
+/* Конец блока timer */
+
+/* Стили блока title */
+@import 'common/title';
+/* Конец блока title */

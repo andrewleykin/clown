@@ -1,0 +1,7 @@
+//- Миксины
+
+
+//- svg картинки
+mixin icon (name)
+  svg(role='img', class='icon icon--' + name)&attributes(attributes)
+    use(xlink:href='app/img/sprite/sprite.svg#'+ name)

@@ -1,0 +1,53 @@
+.timer__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.timer__block {
+	width: 23%;
+}
+
+.timer__load {
+	width: 100%;
+	height: 3px;
+	background: rgba(255,255,255,0.5);
+	margin-bottom: 14px;
+}
+
+.timer__counter {
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	opacity: 0;
+	strong {
+		font-size: 24px;
+	}
+}
+
+.timer__block--active {
+	.timer__load {
+		background: white;
+		position: relative;
+		overflow: hidden;
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			background: $mainColor;
+			animation: loading 10s linear;
+		}
+	}
+	.timer__counter {
+		opacity: 1;
+	}
+}
+
+@keyframes loading {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}

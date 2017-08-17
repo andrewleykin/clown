@@ -1,0 +1,23 @@
+.menu__list {
+	display: flex;
+	text-transform: uppercase;
+}
+
+.menu__item {
+	padding: 10px 25px;
+	cursor: pointer;
+	&:hover {
+		.menu__link {
+			color: $accentColor;
+			border-bottom: 2px solid $accentColor;
+		}
+	}
+}
+.menu__link {
+	display: block;
+	position: relative;
+	color: white;
+	font-family: $boldFont;
+	font-size: 14px;
+	padding: 0 2px 10px;
+}

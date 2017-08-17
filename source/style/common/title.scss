@@ -1,0 +1,24 @@
+.title {
+	font-size: 30px;
+	font-family: $boldFont;
+	color: $titleColor;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background: $mainColor;
+		position: absolute;
+		top: 100%;
+		@include center('x');
+	}
+}
+
+.subtitle {
+	font-size: 24px;
+	font-family: $introScriptFont;
+	color: $titleColor;
+}

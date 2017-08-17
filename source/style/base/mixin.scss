@@ -1,0 +1,19 @@
+// Mixin
+
+
+@mixin center ($name) {
+	position: absolute;
+	@if ($name == 'x') {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@if ($name == 'xy') {
+		left: 50%;
+		top: 50%;
+		transform: translate(-505, -50%);
+	}
+	@if ($name == 'y') {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
