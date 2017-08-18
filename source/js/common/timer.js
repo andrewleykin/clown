@@ -23,6 +23,24 @@
 
 		}
 
-		setInterval(nextBlock, duration);
+		let next = setInterval(nextBlock, duration);
+
+		items.click(function() {
+			let activeItem = items.filter('.' + active),
+				counter = activeItem.index();
+
+			counter++;
+
+			if (counter >= items.length) {
+				counter = 0;
+			}
+
+			if (!($(this).hasClass(active))) {
+				clearInterval(next);
+				activeItem.removeClass(active);
+				$(this).addClass(active);
+				next = setInterval(nextBlock, duration);
+			}
+		});
 
 })();

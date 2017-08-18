@@ -10,10 +10,16 @@
 	@if ($name == 'xy') {
 		left: 50%;
 		top: 50%;
-		transform: translate(-505, -50%);
+		transform: translate(-50%, -50%);
 	}
 	@if ($name == 'y') {
 		top: 50%;
 		transform: translateY(-50%);
 	}
+}
+
+// Extend
+
+.trs {
+	transition: all .2s linear;
 }

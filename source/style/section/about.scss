@@ -15,6 +15,7 @@
 	width: 80%;
 	margin: 0 auto 80px;
 	font-size: 15px;
+	line-height: 24px;
 }
 
 .about__list {
@@ -25,7 +26,7 @@
 .about__item {
 	position: relative;
 	overflow: hidden;
-	transition: all .2s linear;
+	@extend .trs;
 	height: 250px;
 	&:before {
 		content: "";
@@ -37,7 +38,7 @@
 		position: absolute;
 		bottom: 100%;
 		left: 0;
-		transition: bottom .2s linear;
+		@extend .trs;
 	}
 	&:hover {
 		transform: translate(-10px, -10px);
@@ -45,8 +46,35 @@
 		&:before {
 			bottom: 0%;
 		}
+		.about__info {
+			opacity: 1;
+		}
 	}
 }
+
 .about__image {
 	max-width: 100%;
+}
+
+.about__info {
+	position: absolute;
+	@include center ('xy')
+	opacity: 0;
+	@extend .trs;
+	transition-delay: .1s;
+}
+
+.about__icon {
+	margin-bottom: 10px;
+	.icon--creative {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.about__descr {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: $boldFont;
+	color: white;
 }
