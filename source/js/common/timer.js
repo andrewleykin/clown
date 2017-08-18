@@ -1,4 +1,4 @@
-// Функция для таймера в блоке header
+// Скрипт для таймера в блоке header
 
 (function () {
 	const list = $('.timer__list'),

@@ -1,0 +1,28 @@
+.number {
+	background: $blueColor;
+	color: white;
+	text-align: center;
+	font-family: $boldFont;
+}
+
+.number__list {
+	display: flex;
+}
+
+.number__item {
+	width: 20%;
+	padding: 85px 0;
+	border-right: 1px solid #b5eae0;
+	&:last-child {
+		border-right: none;
+	}
+}
+
+.number__counter {
+	font-size: 72px;
+	margin-bottom: 10px;
+}
+
+.number__descr {
+	font-size: 14px;
+}
