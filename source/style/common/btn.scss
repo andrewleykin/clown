@@ -19,7 +19,7 @@
 		display: block;
 		width: 200px;
 		height: 200px;
-		background: white;
+		background: $accentColor;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -34,8 +34,9 @@
 		transform: translate(150px, 0px) rotate(45deg);
 	}
 	&:hover {
-		color: $accentColor;
+		color: white;
 		line-height: 40px;
+		border: none;
 		&:before {
 			transform: translate(0px, -10px) rotate(45deg);
 		}

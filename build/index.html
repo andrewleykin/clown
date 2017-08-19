@@ -29,9 +29,9 @@
           <div class="header__menu">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Проекты</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Мы в сети</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                <li class="menu__item"><a class="menu__link" href="#project">Проекты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#social">Мы в сети</a></li>
               </ul>
             </nav>
           </div>
@@ -65,7 +65,7 @@
     </section>
     <!-- Конец header-->
     <!-- Блок about-->
-    <section class="about">
+    <section class="about" data-article="about">
       <div class="container">
         <div class="about__block wow fadeIn" data-wow-duration="2s"><span class="subtitle about__subtitle">Кто мы такие?</span>
           <h3 class="title about__title">Немного о нас</h3>
@@ -126,5 +126,181 @@
       </div>
     </section>
     <!-- Конец number-->
+    <!-- Блок project-->
+    <section class="project" data-article="project">
+      <div class="project__block wow fadeIn" data-wow-duration="2s"><span class="subtitle project__subtitle">Кто мы такие?</span>
+        <h3 class="title project__title">Наши проекты</h3>
+      </div>
+      <div class="project__wrap">
+        <div class="container">
+          <div class="project__item">
+            <div class="project__photo wow fadeInLeft"><img src="app/img/project/project__1.jpg" alt="Фото проекта"></div>
+            <div class="project__descr wow fadeInRight">
+              <div class="project__counter">1</div>
+              <h2 class="project__name">Больничные клоуны</h2>
+              <p class="project__text project__text--italic">“Юмор и смех – лекарство для всех.”</p>
+              <p class="project__text">Больничная клоунада – специальная программа для госпиталей и медицинских центров. Клоуны, прошедшие специальное обучение, посещают палаты и общаются с пациентами.</p>
+              <p class="project__text">Это помогает лечению и снижает стресс пациентов, поддерживает персонал и родственников пациентов. Позитивная сила надежды и юмора удивительно мотивирует к выздоровлению.</p>
+              <button class="btn project__button">Развернуть
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__wrap--gray">
+        <div class="container">
+          <div class="project__item">
+            <div class="project__photo wow fadeInRight"><img src="app/img/project/project__1.jpg" alt="Фото проекта"></div>
+            <div class="project__descr wow fadeInLeft">
+              <div class="project__counter">2</div>
+              <h2 class="project__name">Работа с детскими домами, <span>реабилитационными центрами</span></h2>
+              <p class="project__text">Наши клоуны с большим волнением и тщательностью готовятся к спектаклям. А какое волнение перед каждым показом! Каждое Рождество мы дарим деткам добрый спектакль, который укрепляет веру в чудо. В 2017 году, например, это была сказка о приключениях Буратино.</p>
+              <p class="project__text">В реабилитационном центре «Я вижу сердцем» (пгт Лаишево) мы показали спектакль «Что такое зима?». Наши зрители были главными актерами и волшебниками.</p>
+              <button class="btn project__button">Развернуть
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__wrap">
+        <div class="container">
+          <div class="project__item">
+            <div class="project__photo wow fadeInLeft"><img src="app/img/project/project__1.jpg" alt="Фото проекта"></div>
+            <div class="project__descr wow fadeInRight">
+              <div class="project__counter">3</div>
+              <h2 class="project__name">Благотворительные фестивали</h2>
+              <p class="project__text">Городской инклюзивный фестиваль «Чемодан чудес» - наш крупный проект, которым мы гордимся. Первый семейный праздник  состоялся летом 2013 года. Сегодня с нами сотрудничают более 30 партнеров, поддерживают администрация Набережных Челнов и Камский детский медицинский центр.</p>
+              <p class="project__text">Наш «Чемодан чудес» - это праздник детства, который воспитывает доброту и умение жить в гармонии. Это мероприятие помогает формировать толерантное отношение общества к семьям, воспитывающим детей с ограниченными возможностями.</p>
+              <button class="btn project__button">Развернуть
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__wrap--gray">
+        <div class="container">
+          <div class="project__item">
+            <div class="project__photo wow fadeInRight"><img src="app/img/project/project__1.jpg" alt="Фото проекта"></div>
+            <div class="project__descr wow fadeInLeft">
+              <div class="project__counter">4</div>
+              <h2 class="project__name">«Без границ» </h2><span>Молодежный благотворительный театр</span>
+              <p class="project__text">Появился в 2005 году. Наши зрители - воспитанники детских домов и реабилитационных центров.  Актерский состав сложился из неравнодушных молодых людей – школьников старших классов, студентов и выпускников.</p>
+              <p class="project__text">Появился в 2005 году. Наши зрители - воспитанники детских домов и реабилитационных центров.  Актерский состав сложился из неравнодушных молодых людей – школьников старших классов, студентов и выпускников.</p>
+              <button class="btn project__button">Развернуть
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__wrap">
+        <div class="container">
+          <div class="project__item">
+            <div class="project__photo wow fadeInLeft"><img src="app/img/project/project__1.jpg" alt="Фото проекта"></div>
+            <div class="project__descr wow fadeInRight">
+              <div class="project__counter">5</div>
+              <h2 class="project__name">Инклюзивный театр «Проснись»</h2>
+              <p class="project__text">В 2014 году появилась идея его создания и были организованы уроки театрального искусства для детей с ограниченными возможностями. В 2015 году появилась первая группа «особенных» детей-актеров. </p>
+              <p class="project__text"> «Наша цель: дать детям возможность проявить себя, выйти из дома и делать что-то волшебно-необычное, а здоровым ребятам проявлять заботу, учиться помогать и общаться, не обращая внимания на физические различия, а открывая сердце» – Кузнецова Ирина, педагог и режиссер театра.</p>
+              <button class="btn project__button">Развернуть
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Конец project-->
+    <!-- Блок social-->
+    <section class="social" data-article="social">
+      <div class="container">
+        <div class="social__block wow fadeIn" data-wow-duration="2s"><span class="subtitle about__subtitle">Не упусти интересное</span>
+          <h3 class="title social__title">Следите за нами <br>в социальных сетях</h3>
+        </div><a class="social__link" href="#"><img class="social__ipad" src="app/img/social/social__ipad.png" alt="Фото ВК"></a>
+        <div class="social__iphone wow bounceInRight" data-wow-delay="1s"><img src="app/img/social/social__iphone.png" alt="Фото в Iphone"></div>
+      </div>
+    </section>
+    <!-- Конец social-->
+    <!-- Блок comment-->
+    <div class="comment">
+      <div class="container">
+        <div class="comment__block wow fadeIn" data-wow-duration="2s"><span class="subtitle comment__subtitle">О нас говорят</span>
+          <h3 class="title comment__title">Отзывы наших<br>любимых гостей</h3>
+        </div>
+        <div class="comment__slider">
+          <div class="slider">
+            <div class="slider__display display">
+              <ul class="display__list">
+                <li class="display__item display__item--active">
+                  <div class="display__photo"><img src="app/img/slider/slider__1.png" alt="Фото"></div>
+                  <div class="display__info">
+                    <p class="display__text">“Дорогие, любимые!!!! Спасибо за эмоции, за летний дождь, за тепло, за яркость, за ваше безграничное сердце! Обожаю вас!!!!. Дорогие, любимые!!!! Спасибо за эмоции, за летний дождь!”</p><span class="display__name">Оксана Капачинская</span>
+                  </div>
+                </li>
+                <li class="display__item">
+                  <div class="display__photo"><img src="app/img/slider/slider__1.png" alt="Фото"></div>
+                  <div class="display__info">
+                    <p class="display__text">“Дорогие, любимые!!!! Текст 2”</p><span class="display__name">Человек 2</span>
+                  </div>
+                </li>
+                <li class="display__item">
+                  <div class="display__photo"><img src="app/img/slider/slider__1.png" alt="Фото"></div>
+                  <div class="display__info">
+                    <p class="display__text">“Дорогие, любимые!!!! Текст 3”</p><span class="display__name">Человек 3</span>
+                  </div>
+                </li>
+                <li class="display__item">
+                  <div class="display__photo"><img src="app/img/slider/slider__1.png" alt="Фото"></div>
+                  <div class="display__info">
+                    <p class="display__text">“Дорогие, любимые!!!! Текст 4”</p><span class="display__name">Человек 4</span>
+                  </div>
+                </li>
+                <li class="display__item">
+                  <div class="display__photo"><img src="app/img/slider/slider__1.png" alt="Фото"></div>
+                  <div class="display__info">
+                    <p class="display__text">“Дорогие, любимые!!!! Текст 5”</p><span class="display__name">Человек 5</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__controls">
+              <div class="slider__prev">
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <div class="slider__next">
+                <svg class="icon icon--arrow" role="img">
+                  <use xlink:href="app/img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="slider__users users">
+              <ul class="users__list">
+                <li class="users__item users__item--active"><img src="app/img/slider/slider__1.png" alt="Фото"></li>
+                <li class="users__item"><img src="app/img/slider/slider__1.png" alt="Фото"></li>
+                <li class="users__item"><img src="app/img/slider/slider__1.png" alt="Фото"></li>
+                <li class="users__item"><img src="app/img/slider/slider__1.png" alt="Фото"></li>
+                <li class="users__item"><img src="app/img/slider/slider__1.png" alt="Фото"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец comment-->
   </body>
 </html>

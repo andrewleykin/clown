@@ -29,6 +29,18 @@
 @import 'section/number';
 /* Конец секции number */
 
+/* Стили секции project */
+@import 'section/project';
+/* Конец секции project */
+
+/* Стили секции social */
+@import 'section/social';
+/* Конец секции social */
+
+/* Стили секции comment */
+@import 'section/comment';
+/* Конец секции comment */
+
 
 
 
@@ -49,3 +61,7 @@
 /* Стили блока title */
 @import 'common/title';
 /* Конец блока title */
+
+/* Стили блока slider */
+@import 'common/slider';
+/* Конец блока slider */

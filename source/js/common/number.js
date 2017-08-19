@@ -9,7 +9,7 @@
 		
 		var scrollTop = $(this).scrollTop();
 
-		if ( scrollTop > block.offset().top - ($(window).height() - 100)) {
+		if (checkDistance(scrollTop)) {
 			for(i=0;i< number.length;i++) {
 				let data = number.eq(i).attr('data-counter');
 
@@ -31,6 +31,14 @@
 		}
 	});
 
+	var checkDistance = function(scrollTop) {
+		var offset = block.offset().top,
+			windowMargin = Math.ceil($(window).height() / 3),
+			topBorder = offset - scrollTop - windowMargin - 300,
+			bottomEdge = block.outerHeight(true) + offset,
+			bottomBorder = scrollTop + windowMargin - bottomEdge - 100;
 
+		return topBorder <= 0 && bottomBorder <= 0
+	}
 
 })();
