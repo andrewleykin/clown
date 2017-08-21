@@ -17,6 +17,16 @@
 	}
 }
 
+.title--min {
+	font-size: 24px;
+	color: white;
+	padding-bottom: 20px;
+	&:after {
+		background: $accentColor;
+	}
+}
+
+
 .subtitle {
 	font-size: 24px;
 	font-family: $introScriptFont;

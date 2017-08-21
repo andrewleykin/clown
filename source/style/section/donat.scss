@@ -1,0 +1,31 @@
+.donat {
+	background: url(../img/bg-donat.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	padding: 55px 0;
+}
+
+.donat__block {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 40px;
+	.icon--heart {
+		width: 35px;
+		height: 35px;
+		fill: $accentColor;
+		margin-bottom: 10px;
+	}
+}
+
+.donat__title, .donat__info {
+	margin-bottom: 45px;
+}
+
+.donat__text {
+	margin-bottom: 25px;
+	text-align: center;
+	line-height: 1.5;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
