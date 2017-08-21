@@ -34,9 +34,9 @@
 	var checkDistance = function(scrollTop) {
 		var offset = block.offset().top,
 			windowMargin = Math.ceil($(window).height() / 3),
-			topBorder = offset - scrollTop - windowMargin - 300,
+			topBorder = offset - scrollTop - windowMargin - 400,
 			bottomEdge = block.outerHeight(true) + offset,
-			bottomBorder = scrollTop + windowMargin - bottomEdge - 100;
+			bottomBorder = scrollTop + windowMargin - bottomEdge;
 
 		return topBorder <= 0 && bottomBorder <= 0
 	}
