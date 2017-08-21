@@ -1,6 +1,6 @@
 section.header(style="background-image: url('app/img/header/header__1.jpg')")
   .container
-    .header__top.wow.slideInDown
+    .header__top.wow.fadeInDown
       .header__logo
         .logo
           +icon('logo')
@@ -21,7 +21,7 @@ section.header(style="background-image: url('app/img/header/header__1.jpg')")
         br
         | радость
       button.btn.btn--fill.wow.bounceIn(data-wow-duration="2s") О нас
-    .header__bottom
+    .header__bottom.wow.fadeInUp(data-wow-delay="1s")
       .timer
         ul.timer__list
           li.timer__block.timer__block--active
