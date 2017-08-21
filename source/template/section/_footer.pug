@@ -1,0 +1,51 @@
+section.footer
+  .container
+    .footer__top
+      .footer__block.deposits
+        .logo
+          +icon('logo--gray')
+        p.deposits__text Банк получателя - АКБ «Энергобанк» 
+          br 
+          | Получатель - АНО «Союз Добрых Сердец»
+          br
+          | Номер счета - 40703810400190021037 
+          br
+          | кор/счет - 30101810300000000770 
+          br
+          | БИК - 049205770 
+          br
+          | ОГРН - 1021600000289 
+          br
+          | ИНН - 1653011835 
+          br
+          | КПП - 165801001
+      .footer__block.press
+        .footer__title Пресса о нас
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+      .footer__block.links
+        .footer__title Полезные ссылки
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+        a.footer__link(href="#") Ссылка на пост
+      .footer__block.photos
+        .footer__title Вконтакте
+        .photos__block
+          - for (i=0; i < 9; i++) {
+            img.photos__img(src="app/img/footer/footer__1.jpg" alt="foto" + i)
+          - }
+        a.photos__link(href="#") Ещё..
+    .footer__bottom
+      .copyright
+        .copyright__heart
+          +icon('heart')
+        span.copyright__text Сделано с любовью и старанием в 
+          b 2017 
+          | году

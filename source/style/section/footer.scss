@@ -1,0 +1,96 @@
+.footer {
+	background: $footerBgColor;
+	padding: 70px 0 40px;
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.footer__bottom {
+	text-align: center;
+}
+
+.footer__block {
+	width: 20%;
+	&:first-child {
+		width: 34%;
+	}
+	&:last-child {
+		width: 25%;
+	}
+}
+
+.footer__title {
+	font-size: 14px;
+	font-family: $boldFont;
+	color: $titleColor;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+
+.footer__link {
+	display: block;
+	color: $textColor;
+	margin-bottom: 10px;
+	@extend .trs;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:hover {
+		color: black;
+	}
+}
+
+.deposits {
+	.icon--logo--gray {
+		width: 160px;
+		height: 60px;
+	}
+	.logo {
+		margin-bottom: 35px;
+	}
+}
+
+.deposits__text {
+	line-height: 24px;
+}
+
+.photos__block {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photos__img {
+	margin: 5px;
+}
+
+.photos__link {
+	@extend .footer__link;
+	margin-bottom: 0;
+	font-family: $italicFont;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.copyright__heart {
+	margin-right: 5px;
+	.icon--heart {
+		width: 15px;
+		height: 15px;
+		fill: $titleColor;
+	}
+}
+
+.copyright__text {
+	font-size: 14px;
+	color: $titleColor
+}
