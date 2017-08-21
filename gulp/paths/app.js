@@ -6,5 +6,6 @@ module.exports = [
   './source/js/common/timer.js',
   './source/js/common/number.js',
   './source/js/common/navMenu.js',
-  './source/js/common/slider.js'
+  './source/js/common/slider.js',
+  './source/js/common/project.js'
 ];
