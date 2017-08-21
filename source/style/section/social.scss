@@ -28,8 +28,40 @@
 }
 
 .social__link {
-	img {
-		margin-bottom: -2px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 480px;
+	height: 580px;
+	background: url(../img/social/social__ipad.png) center no-repeat;
+	margin: 0 auto;
+	.icon--vk {
+		margin: auto;
+		fill: white;
+		z-index: 5;
+		position: relative;
+		transform: scale(0);
+		@extend .trs;
+		transition-delay: .1s
+	}
+	&:after {
+		z-index:2;
+		position: absolute;
+		content: "";
+		display: block;
+		width: 430px;
+		height: 510px;
+		align-self: flex-end;
+		background: rgba(0,0,0,.5);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		transform: scale(0);
+		@extend .trs;
+	}
+	&:hover {
+		&:after, .icon--vk {
+			transform: scale(1);
+		}
 	}
 }
 
@@ -37,4 +69,5 @@
 	position: absolute;
 	top: 50%;
 	left: 60%;
+	z-index: 10;
 }
