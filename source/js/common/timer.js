@@ -3,7 +3,8 @@
 (function () {
 	const list = $('.timer__list'),
 		items = list.find('.timer__block'),
-		active = 'timer__block--active';
+		active = 'timer__block--active',
+		header = $('.header'),
 		duration = 10000;
 
 		const nextBlock = function () {
