@@ -11,11 +11,14 @@
 			let activeItem = items.filter('.' + active),
 				counter = activeItem.index();
 
+
 			counter++;
 
 			if (counter >= items.length) {
 				counter = 0;
 			}
+			let str = 'background-image: url(app/img/header/header__' + (counter+1) + '.jpg)';
+			header.attr('style', str);
 
 			reqItem = items.eq(counter);
 
@@ -28,13 +31,10 @@
 
 		items.click(function() {
 			let activeItem = items.filter('.' + active),
-				counter = activeItem.index();
+				counter = $(this).index();
 
-			counter++;
-
-			if (counter >= items.length) {
-				counter = 0;
-			}
+			let str = 'background-image: url(app/img/header/header__' + (counter+1) + '.jpg)';
+			header.attr('style', str);
 
 			if (!($(this).hasClass(active))) {
 				clearInterval(next);
