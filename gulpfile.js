@@ -12,6 +12,7 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   merge: require('merge-stream'),
+  gcmq: require('gulp-group-css-media-queries'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };
@@ -33,6 +34,7 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'sprite:svg'
   ),
+  'css:complete',
   $.gulp.parallel(
     'watch',
     'serve'

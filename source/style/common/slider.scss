@@ -104,6 +104,11 @@
 			transform: translate(30%, 50%) rotate(90deg);
 			fill: white;
 		}
+		&.slider__controls--disabled {
+			.icon--arrow {
+				transform: translate(50%, 50%) rotate(90deg);
+			}
+		}
 	}
 }
 
@@ -116,12 +121,27 @@
 		.icon--arrow {
 			transform: translate(70%, 50%) rotate(-90deg);
 		}
+		&.slider__controls--disabled {
+			.icon--arrow {
+				transform: translate(50%, 50%) rotate(-90deg);
+			}
+		}
 	}
 }
 
 .slider__controls--disabled {
-	opacity: 0;
+	border-color: rgba(0,0,0,.2);
 	cursor: default;
+	.icon--arrow {
+		fill: rgba(0,0,0,.2);
+	}
+	&:hover {
+		border-color: rgba(0,0,0,.2);
+		background: none;
+		.icon--arrow {
+			fill: rgba(0,0,0,.2);
+		}
+	}
 }
 
 .users {

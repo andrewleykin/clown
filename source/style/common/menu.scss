@@ -22,3 +22,8 @@
 	padding: 0 2px 10px;
 	@extend .trs;
 }
+
+.menu__link--active {
+	color: $accentColor;
+	border-bottom: 2px solid $accentColor;
+}

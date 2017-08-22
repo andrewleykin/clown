@@ -5,6 +5,7 @@
 	background-size: cover;
 	position: relative;
 	text-align: center;
+	z-index: 1;
 	&:after {
 		content: "";
 		display: block;

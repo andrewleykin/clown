@@ -1,6 +1,23 @@
-section.header(style="background-image: url('app/img/header/header__1.jpg')")
+header.header(style="background-image: url('app/img/header/header__1.jpg')")
   .container
-    .header__top.wow.fadeInDown
+    .header__top--fixed
+      .header__logo
+        .logo
+          +icon('logo')
+      .header__menu
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link.menu__link--active(href="#about") О нас
+            li.menu__item
+              a.menu__link(href="#project") Проекты
+            li.menu__item
+              a.menu__link(href="#social") Мы в сети
+            li.menu__item
+              a.menu__link(href="#comment") Отзывы
+      div.header__donat
+        button.btn.btn--white Пожертвовать
+    .header__top
       .header__logo
         .logo
           +icon('logo')
@@ -13,6 +30,8 @@ section.header(style="background-image: url('app/img/header/header__1.jpg')")
               a.menu__link(href="#project") Проекты
             li.menu__item
               a.menu__link(href="#social") Мы в сети
+            li.menu__item
+              a.menu__link(href="#comment") Отзывы
       div.header__donat
         button.btn.btn--white Пожертвовать
     .header__middle
@@ -20,7 +39,7 @@ section.header(style="background-image: url('app/img/header/header__1.jpg')")
       span.header__title Мы дарим
         br
         | радость
-      button.btn.btn--fill.wow.bounceIn(data-wow-duration="2s") О нас
+      button.btn.btn--fill.js-btn--about.wow.bounceIn(data-wow-duration="2s") О нас
     .header__bottom.wow.fadeInUp(data-wow-delay="1s")
       .timer
         ul.timer__list

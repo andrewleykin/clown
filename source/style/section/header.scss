@@ -79,3 +79,34 @@
 		top: 100%;
 	}
 }
+
+.header__top--fixed {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	padding: 10px 0;
+	background: rgba(0,0,0,.7);
+	@extend .trs;
+	.icon--logo {
+		width: 170px;
+		height: 50px;
+	}
+	.header__logo {
+		margin-left: auto;
+	}
+	.header__donat {
+		margin-right: auto;
+	}
+}
+
+// Медиа запросы
+
+@media (max-width: 1200px) {
+	.header__top {
+		margin-bottom: 2%;
+	}
+}
