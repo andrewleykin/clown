@@ -110,3 +110,59 @@
 		transform: rotate(180deg);
 	}
 }
+
+
+// Медиа запросы
+
+@media (max-width: 1200px) {
+	.project__text {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 700px) {
+	.project__item {
+		flex-direction: column;
+		align-items: center;
+	}
+	.project__photo {
+		width: 90%;
+		margin-bottom: 20px;
+		&:before {
+			transform: translate(30px, -30px) rotate(-2deg);
+		}
+	}
+	.project__descr {
+		width: 95%;
+	}
+	.project__wrap--gray {
+		.project__item {
+			flex-direction: column;
+			align-items: center;
+		}
+		.project__photo {
+			&:before {
+				transform: translate(-25px, -30px) rotate(1deg);
+			}
+		}
+	}
+	.project__name {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.project__photo {
+		&:before {
+			width: 90%;
+			height: 90%;
+		}
+	}
+	.project__wrap--gray {
+		.project__photo {
+			&:before {
+				transform: translate(-20px, -25px) rotate(1deg);
+			}
+		}
+	}
+}

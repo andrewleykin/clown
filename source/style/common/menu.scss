@@ -27,3 +27,19 @@
 	color: $accentColor;
 	border-bottom: 2px solid $accentColor;
 }
+
+
+// Медиа запросы 
+
+@media (max-width: 960px) {
+	.menu__list {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 700px) {
+	.menu__item {
+		padding: 10px 10px;
+		white-space: nowrap;
+	}
+}

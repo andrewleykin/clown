@@ -15,6 +15,14 @@
 		top: 100%;
 		@include center('x');
 	}
+	@media (max-width: 960px) {
+		font-size: 28px;
+		padding-bottom: 35px;
+	}
+	@media (max-width: 700px) {
+		font-size: 25px;
+		padding-bottom: 30px;
+	}
 }
 
 .title--min {

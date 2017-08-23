@@ -13,7 +13,7 @@
 			sticky.css('top', '0');
 		}
 		if ($(this).scrollTop() <= height) {
-			sticky.css('top', '-100px');
+			sticky.css('top', '-50%');
 		}
 		checkArticle();
 	});

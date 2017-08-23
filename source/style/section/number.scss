@@ -26,3 +26,62 @@
 .number__descr {
 	font-size: 14px;
 }
+
+
+// Медиа запросы
+
+@media (max-width: 1200px) {
+	.number__item {
+		padding: 75px 0;
+	}
+	.number__counter {
+		font-size: 65px;
+	}
+	.number__descr {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 960px) {
+	.number__item {
+		padding: 65px 0;
+	}
+	.number__counter {
+		font-size: 58px;
+	}
+	.number__descr {
+		font-size: 14px;
+	}
+}
+@media (max-width: 700px) {
+	.number__list {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	.number__item {
+		padding: 35px 0;
+		width: 150px;
+		border-right: 1px solid #b5eae0;
+		border-left: 1px solid #b5eae0;
+		margin-bottom: 20px;
+		&:last-child {
+			border-right: 1px solid #b5eae0;
+		}
+	}
+	.number__counter {
+		font-size: 40px;
+	}
+	.number__descr {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.number__list {
+		padding-top: 10px;
+	}
+	.number__item {
+		margin-bottom: 10px;
+	}
+}

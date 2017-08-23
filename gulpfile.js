@@ -34,7 +34,7 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'sprite:svg'
   ),
-  'css:complete',
+  // 'css:complete',
   $.gulp.parallel(
     'watch',
     'serve'

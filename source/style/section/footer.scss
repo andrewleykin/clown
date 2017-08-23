@@ -94,3 +94,37 @@
 	font-size: 14px;
 	color: $titleColor
 }
+
+// Медиа запросы
+
+@media (max-width: 1200px) {
+	.footer {
+		padding: 50px 0 30px;
+	}
+	.footer__top {
+		justify-content: space-around;
+	}
+	.footer__block {
+		width: 25%;
+		&:first-child {
+			width: 40%;
+		}
+	}
+	.photos {
+		display: none;
+	}
+}
+
+
+
+@media (max-width: 700px) {
+	.footer__block {
+		width: 30%;
+		&:first-child {
+			width: 60%;
+		}
+	}
+	.press {
+		display: none;
+	}
+}

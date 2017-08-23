@@ -30,20 +30,17 @@
 
 .social__link {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	width: 480px;
-	height: 580px;
-	background: url(../img/social/social__ipad.png) center no-repeat;
-	margin: 0 auto;
+	display: inline-block;
 	.icon--vk {
 		margin: auto;
 		width: 130px;
 		height: 130px;
 		fill: white;
 		z-index: 5;
-		position: relative;
-		transform: scale(0);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(0);
 		@extend .trs;
 		transition-delay: .1s
 	}
@@ -52,25 +49,56 @@
 		position: absolute;
 		content: "";
 		display: block;
-		width: 430px;
-		height: 510px;
-		align-self: flex-end;
+		width: 90%;
+		height: 88%;
+		bottom: 0;
+		left: 50%;
 		background: rgba(0,0,0,.3);
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		transform: scale(0);
+		transform: translateX(-50%) scale(0);
 		@extend .trs;
 	}
 	&:hover {
-		&:after, .icon--vk {
-			transform: scale(1);
+		&:after {
+			transform: translateX(-50%) scale(1);
+		}
+		.icon--vk {
+			transform: translate(-50%, -50%) scale(1)
 		}
 	}
 }
 
+.social__img {
+	margin-bottom: -2px;
+}
 .social__iphone {
 	position: absolute;
-	top: 50%;
+	top: 80%;
+	transform: translateY(-50%);
 	left: 60%;
 	z-index: 10;
+}
+
+// Медиа запросы 
+
+@media (max-width: 960px) {
+	.social {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 700px) {
+	.social {
+		padding-top: 80px;
+	}
+}
+
+@media (max-width: 480px) {
+	.social__link {
+		.icon--vk {
+			width: 100px;
+			height: 100px;
+		}
+	}
 }

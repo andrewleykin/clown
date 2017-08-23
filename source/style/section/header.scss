@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	min-height: 800px;
+	min-height: 760px;
 	position: relative;
 	&:after {
 		content: "";
@@ -21,6 +21,10 @@
 	.container {
 		position: relative;
 		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
 	}
 }
 
@@ -28,7 +32,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 4%;
 }
 
 .header__logo {
@@ -51,7 +54,7 @@
 
 .header__middle {
 	text-align: center;
-	margin-bottom: 6%;
+	margin: auto 0;
 }
 
 .header__subtitle {
@@ -84,7 +87,7 @@
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
-	top: -100px;
+	top: -50%;
 	left: 0;
 	width: 100%;
 	z-index: 9999;
@@ -106,7 +109,80 @@
 // Медиа запросы
 
 @media (max-width: 1200px) {
+	.header__subtitle {
+		font-size: 55px;
+	}
+	.header__title {
+		font-size: 120px;
+	}
+	.header__bottom {
+		margin-top: auto;
+	}
+}
+
+@media (max-width: 960px) {
+	.header {
+		min-height: 600px;
+		height: 600px;
+		background-position-x: left;
+	}
 	.header__top {
-		margin-bottom: 2%;
+		flex-wrap: wrap;
+	}
+	.header__top--fixed {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.header__logo {
+			margin: 0;
+		}
+		.header__donat {
+			margin-right: 0;
+		}
+	}
+	.header__logo {
+		margin-bottom: 10px;
+	}
+	.header__menu {
+		width: 100%;
+		order: 1;
+	}
+	.header__subtitle {
+		font-size: 45px;
+	}
+	.header__title {
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header__subtitle {
+		font-size: 40px;
+	}
+	.header__title {
+		font-size: 85px;
+		margin-bottom: 5%;
+	}
+}
+
+@media (max-width: 480px) {
+	.header__top {
+		justify-content: center;
+	}
+	.header__logo {
+		margin: 0 auto 15px;
+	}
+	.header__donat {
+		margin: 0 auto 10px;
+	}
+	.header__top--fixed {
+		.header__logo {
+			margin: 0 auto 15px;
+		}
+		.header__donat {
+			display: none;
+		}
+	}
+	.header__title {
+		font-size: 60px;
 	}
 }

@@ -8,7 +8,6 @@
 .donat__block {
 	width: 50%;
 	text-align: center;
-	margin-bottom: 40px;
 	.icon--heart {
 		width: 35px;
 		height: 35px;
@@ -27,5 +26,26 @@
 	line-height: 1.5;
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+
+// медиа запросы
+
+@media (max-width: 960px) {
+	.donat {
+		background-position-x: 70%;
+	}
+}
+
+@media (max-width: 700px) {
+	.donat {
+		padding: 40px 0;
+	}
+	.donat__block {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.donat__text {
+		font-size: 16px;
 	}
 }
